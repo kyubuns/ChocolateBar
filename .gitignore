@@ -1,0 +1,26 @@
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+
+*.csproj
+*.booproj
+*.unityproj
+*.sln
+*.sln.meta
+*.vscode
+
+*.sublime-*
+*.pbxuser
+*.xcworkspace
+*.pidb
+*.userprefs
+*.userprefs.meta
+*.ppe
+*.ppe.meta
+
+*.ipa
+*.apk
+
+# build
+tvos
+iOS

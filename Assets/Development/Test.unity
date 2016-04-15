@@ -637,6 +637,7 @@ GameObject:
   - 4: {fileID: 1823834920}
   - 20: {fileID: 1823834919}
   - 114: {fileID: 1823834918}
+  - 114: {fileID: 1823834921}
   m_Layer: 0
   m_Name: Debug Camera
   m_TagString: Untagged
@@ -705,6 +706,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 379469827}
   m_RootOrder: 0
+--- !u!114 &1823834921
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1823834917}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fdcad5f632a6f454bbbc97d26f4c369d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  config: {fileID: 11400000, guid: 98ebfacc219484925a3395e644a7bd55, type: 2}
 --- !u!1001 &1824732333
 Prefab:
   m_ObjectHideFlags: 0

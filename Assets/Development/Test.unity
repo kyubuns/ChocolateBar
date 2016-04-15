@@ -270,10 +270,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetTexture: {fileID: 8400000, guid: 24f2befbb11c741fa8467e710399f50e, type: 2}
   material: {fileID: 2100000, guid: 5d78f330f96524dc48c5a37e696f796e, type: 2}
-  LeftTop: {x: 0.35, y: 0.91}
-  LeftBottom: {x: 0.36, y: 0.02}
-  RightBottom: {x: 0.74, y: 0.03}
-  RightTop: {x: 0.73, y: 0.91}
+  config: {fileID: 11400000, guid: 98ebfacc219484925a3395e644a7bd55, type: 2}
 --- !u!1 &891623501
 GameObject:
   m_ObjectHideFlags: 0
@@ -331,7 +328,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 891623501}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -0.74, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
@@ -590,6 +587,43 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 11424244, guid: 478927b5a935a43efbf416c1c3b97c38, type: 2}
+      propertyPath: LeftTop.x
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 11424244, guid: 478927b5a935a43efbf416c1c3b97c38, type: 2}
+      propertyPath: LeftBottom.x
+      value: 0.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 11424244, guid: 478927b5a935a43efbf416c1c3b97c38, type: 2}
+      propertyPath: RightBottom.x
+      value: 0.93
+      objectReference: {fileID: 0}
+    - target: {fileID: 11424244, guid: 478927b5a935a43efbf416c1c3b97c38, type: 2}
+      propertyPath: RightTop.x
+      value: 0.89
+      objectReference: {fileID: 0}
+    - target: {fileID: 11424244, guid: 478927b5a935a43efbf416c1c3b97c38, type: 2}
+      propertyPath: LeftTop.y
+      value: 0.92
+      objectReference: {fileID: 0}
+    - target: {fileID: 11424244, guid: 478927b5a935a43efbf416c1c3b97c38, type: 2}
+      propertyPath: LeftBottom.y
+      value: 0.08
+      objectReference: {fileID: 0}
+    - target: {fileID: 11424244, guid: 478927b5a935a43efbf416c1c3b97c38, type: 2}
+      propertyPath: RightBottom.y
+      value: 0.14
+      objectReference: {fileID: 0}
+    - target: {fileID: 11424244, guid: 478927b5a935a43efbf416c1c3b97c38, type: 2}
+      propertyPath: RightTop.y
+      value: 0.95
+      objectReference: {fileID: 0}
+    - target: {fileID: 11424244, guid: 478927b5a935a43efbf416c1c3b97c38, type: 2}
+      propertyPath: config
+      value: 
+      objectReference: {fileID: 11400000, guid: 98ebfacc219484925a3395e644a7bd55,
+        type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 478927b5a935a43efbf416c1c3b97c38, type: 2}
   m_IsPrefabParent: 0

@@ -7,10 +7,7 @@ namespace ChocolateBar
     {
         [SerializeField] RenderTexture targetTexture;
         [SerializeField] Material material;
-        public Vector2 LeftTop = new Vector2(0.0f, 1.0f);
-        public Vector2 LeftBottom = new Vector2(0.0f, 0.0f);
-        public Vector2 RightBottom = new Vector2(1.0f, 0.0f);
-        public Vector2 RightTop = new Vector2(1.0f, 1.0f);
+        [SerializeField] ProjectionConfig config;
         
         public void OnPostRender()
         {
@@ -21,17 +18,11 @@ namespace ChocolateBar
             GL.LoadOrtho();
             GL.Begin(GL.TRIANGLE_STRIP);
             
-            GL.TexCoord2(0.0f, 0.0f);
-            GL.Vertex3(LeftBottom.x, LeftBottom.y, 0.0f);
-            
-            GL.TexCoord2(0.0f, 1.0f);
-            GL.Vertex3(LeftTop.x, LeftTop.y, 0.0f);
-            
-            GL.TexCoord2(1.0f, 0.0f);
-            GL.Vertex3(RightBottom.x, RightBottom.y, 0.0f);
-            
-            GL.TexCoord2(1.0f, 1.0f);
-            GL.Vertex3(RightTop.x, RightTop.y, 0.0f);
+            for(int i=0;i<Mathf.Min(config.ScreenPositions.Count, config.TexturePositions.Count);++i)
+            {
+                GL.TexCoord2(config.TexturePositions[i].x, config.TexturePositions[i].y);
+                GL.Vertex3(config.ScreenPositions[i].x, config.ScreenPositions[i].y, 0.0f);
+            }
             
             GL.End();
             GL.PopMatrix();
